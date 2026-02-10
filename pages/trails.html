@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse all hiking trails in the Pacific Northwest. Filter by region and difficulty level."
+    />
+    <title>Trail Directory - The Great Outdoors</title>
+
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+      <div class="container navbar-container">
+        <a href="index.html" class="navbar-brand">
+          <span>🏔️</span>
+          <div>
+            <div>The Great Outdoors</div>
+            <div class="text-xs text-emerald-100">Pacific Northwest Hiking</div>
+          </div>
+        </a>
+
+        <button
+          class="navbar-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+
+        <ul class="navbar-nav" id="navMenu">
+          <li><a href="#" class="nav-link">Home</a></li>
+          <li><a href="#" class="nav-link active">Trails</a></li>
+          <li><a href="#" class="nav-link">Safety</a></li>
+          <li><a href="#" class="nav-link">Community</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Trail Directory</h1>
+          <p class="hero-text">
+            Browse our curated collection of Pacific Northwest trails. Use
+            filters to find the perfect hike for your experience level and
+            location.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FILTERS AND SEARCH -->
+    <section
+      class="bg-white border"
+      style="
+        position: sticky;
+        top: 60px;
+        z-index: 40;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <div class="container py-3">
+        <div class="flex gap-3 flex-wrap">
+          <!-- Search Bar -->
+          <div style="flex: 1; min-width: 250px">
+            <input
+              type="text"
+              id="searchInput"
+              class="form-control"
+              placeholder="🔍 Search trails by name or location..."
+              aria-label="Search trails"
+            />
+          </div>
+
+          <!-- Region Filter -->
+          <div>
+            <label
+              for="regionFilter"
+              class="form-label text-sm"
+              style="margin-bottom: 0.25rem"
+              >Region</label
+            >
+            <select id="regionFilter" class="form-control">
+              <option value="All">All Regions</option>
+              <option value="Oregon">Oregon</option>
+              <option value="Washington">Washington</option>
+            </select>
+          </div>
+
+          <!-- Difficulty Filter -->
+          <div>
+            <label
+              for="difficultyFilter"
+              class="form-label text-sm"
+              style="margin-bottom: 0.25rem"
+              >Difficulty</label
+            >
+            <select id="difficultyFilter" class="form-control">
+              <option value="All">All Levels</option>
+              <option value="Easy">Easy</option>
+              <option value="Moderate">Moderate</option>
+              <option value="Hard">Hard</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Results Counter -->
+        <div class="mt-2 text-sm text-stone-600" id="resultsCount">
+          <!-- Will be updated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAIL CARDS -->
+    <section class="section-lg">
+      <div class="container">
+        <div class="grid grid-cols-3 gap-3" id="trailsContainer">
+          <!-- Trail cards will be inserted here by JavaScript -->
+        </div>
+
+        <!-- No Results Message (hidden by default) -->
+        <div id="noResults" class="text-center py-4" style="display: none">
+          <p class="text-xl text-stone-600 mb-3">
+            No trails found matching your filters.
+          </p>
+          <button id="clearFilters" class="btn btn-secondary">
+            Clear all filters
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="grid grid-cols-3 gap-4">
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <span style="font-size: 1.5rem">🏔️</span>
+              <span class="font-bold text-lg" style="color: white"
+                >The Great Outdoors</span
+              >
+            </div>
+            <p class="text-sm mb-3">
+              Helping people explore the Pacific Northwest responsibly while
+              protecting natural resources.
+            </p>
+            <div class="text-sm">
+              <div class="mb-2">📍 Bend, Oregon</div>
+              <div>
+                ✉️
+                <a
+                  href="mailto:info@thegreatoutdoors.org"
+                  style="color: #d6d3d1"
+                  >info@thegreatoutdoors.org</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="#">Browse Trails</a></li>
+              <li><a href="#">Hiking Safety</a></li>
+              <li><a href="#">Join Community</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Our Mission</h3>
+            <p class="text-sm">
+              Founded by Evan Holt, a former wilderness guide with 15+ years of
+              experience, we're dedicated to promoting safe, responsible outdoor
+              recreation in the Pacific Northwest.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="currentYear"></span> The Great Outdoors. All rights
+            reserved.
+          </p>
+          <p class="mt-1">
+            Building a hiking community in the Pacific Northwest
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/trails-data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/trails.js"></script>
+  </body>
+</html>

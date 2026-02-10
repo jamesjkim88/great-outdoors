@@ -1,30 +1,235 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Welcome to the Great Outdoors!</title>
-<link rel="stylesheet" type="text/css" href="styles/toplevel.css">
-<script src="scripts/myscripts.js"></script>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Project Scaffold</title>
+    <link rel="stylesheet" href="styles/framework.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+      <div class="container navbar-container">
+        <a href="index.html" class="navbar-brand">
+          <span class="logo-emoji">🏔️</span>
+          <div>
+            <div class="brand-name">Site Name</div>
+            <div class="brand-subtitle text-xs">Subtitle / Tagline</div>
+          </div>
+        </a>
 
-</head>
+        <button
+          class="navbar-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
 
-<body>
+        <ul class="navbar-nav" id="navMenu">
+          <!-- 
+          
+          Phillip, please add the correct copy for the links and the right url paths for each page.
 
-<h1>Welcome to the Great Outdoors!</h1>
+          -->
+          <li><a href="#" class="nav-link active">Home</a></li>
+          <li><a href="#" class="nav-link">Section 1</a></li>
+          <li><a href="#" class="nav-link">Section 2</a></li>
+          <li><a href="#" class="nav-link">Section 3</a></li>
+        </ul>
+      </div>
+    </nav>
 
+    <!-- HERO SECTION -->
+    <!-- 
+    
+    Phillip, please add the correct copy onto the headers, p and link tags
 
-<img src = "images/outdoors.jpg" alt="Great Outdoors" onmouseover="showAlt(this)" onmouseout="hideAlt(this)">
-<figcaption>Your Adventure Awaits!</figcaption>
+     -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">[Hero Title Here]</h1>
+          <p class="hero-text">[Hero description / tagline]</p>
+          <div class="hero-buttons flex gap-2 flex-wrap">
+            <a href="#" class="btn btn-primary btn-lg">[Primary CTA]</a>
+            <a href="#" class="btn btn-secondary btn-lg">[Secondary CTA]</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<p id="alttext" style="font-size:50px"> <p>
+    <!-- VALUE PROPOSITIONS -->
 
-<ul>
-<li><a href="mountain.html">Climb the Mountain</a></li>
-<li><a href="forest.html">Wander the Forest</a></li>
-<li><a href="falls.html">See the Falls</a></li>
-<li><a href="ferry.html">Ride the Ferry</a></li>
-<li><a href="lake.html">Walk Around the Lake</a></li>
-<li><a href="park.html">Read in the Park</a></li>
-</ul>
+    <!-- 
+    
+    Abdi, the HTML and classes should already be set in place and just need you to add in the
+    wording.
 
-</body>
+    -->
+
+    <section class="section-lg bg-white">
+      <div class="container">
+        <h2 class="text-center mb-4">[Section Title for Value Propositions]</h2>
+
+        <div class="grid grid-cols-3 gap-4">
+          <!-- Value Proposition 1 -->
+          <div class="text-center">
+            <div class="icon-circle">🛡️</div>
+            <h3>[Title]</h3>
+            <p class="text-stone-600">[Description]</p>
+          </div>
+
+          <!-- Value Proposition 2 -->
+          <div class="text-center">
+            <div class="icon-circle">📍</div>
+            <h3>[Title]</h3>
+            <p class="text-stone-600">[Description]</p>
+          </div>
+
+          <!-- Value Proposition 3 -->
+          <div class="text-center">
+            <div class="icon-circle">🏔️</div>
+            <h3>[Title]</h3>
+            <p class="text-stone-600">[Description]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED TRAILS -->
+    <section class="section-lg">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2>[Section Title for featured trails]</h2>
+          <p class="text-lg text-stone-600">[Section Description]</p>
+        </div>
+
+        <!-- Trail Cards Container -->
+        <div>
+          <!-- Trail cards will be inserted here by JavaScript -->
+        </div>
+
+        <!-- 
+        
+        Anthony, place grid grid-cols-3 gap-3 class names onto the empty div above. Also look into what
+        html id is needed to create the cards from JavaScript. The ID is already populated in the JavaScript files.
+
+        The cards are already created via JavaScript and you can look into,
+          - home.js
+          - trails-details
+        Those js files should give you an idea on what ID to use.
+
+        -->
+
+        <!-- View All Trails Link -->
+        <div class="text-center mt-4">
+          <a href="trails.html" class="text-emerald-700 font-semibold">
+            View All Trails →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION - COMMUNITY -->
+    <section class="section-lg bg-emerald-800 text-white">
+      <div class="container text-center cta-container">
+        <div class="cta-icon">👥</div>
+        <h2>Join Our Hiking Community</h2>
+        <p class="text-xl text-emerald-100 mb-4">
+          Connect with fellow hikers, join guided hikes, and support responsible
+          outdoor recreation in the Pacific Northwest.
+        </p>
+        <a href="#" class="btn btn-secondary btn-lg">Get Involved →</a>
+      </div>
+    </section>
+
+    <!-- ABOUT / FOOTER INFO -->
+    <section class="section-lg bg-white">
+      <div class="container container-narrow">
+        <h2 class="text-center mb-4">[About / Founder / Mission]</h2>
+        <div class="card">
+          <p class="text-stone-700">[Paragraph 1]</p>
+          <p class="text-stone-700">[Paragraph 2]</p>
+          <p class="text-stone-700">[Paragraph 3]</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="grid grid-cols-3 gap-4">
+          <!-- Organization Info -->
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="logo-emoji">🏔️</span>
+              <span class="font-bold text-lg text-white"
+                >The Great Outdoors</span
+              >
+            </div>
+            <p class="text-sm mb-3">
+              Helping people explore the Pacific Northwest responsibly while
+              protecting natural resources.
+            </p>
+            <div class="text-sm">
+              <div class="mb-2">📍 Bend, Oregon</div>
+              <div>
+                ✉️
+                <a href="mailto:info@thegreatoutdoors.org" class="footer-email">
+                  info@thegreatoutdoors.org
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+
+          <!-- 
+          
+          Abdi, with the quick links add in the correct url paths for each individual pages.
+          You can find them under the pages directory so it should be the trails page, safety page,
+          and the community page.
+
+          -->
+          <div>
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="#">Browse Trails</a></li>
+              <li><a href="#">Hiking Safety</a></li>
+              <li><a href="#">Join Community</a></li>
+            </ul>
+          </div>
+
+          <!-- Mission -->
+          <div>
+            <h3>Our Mission</h3>
+            <p class="text-sm">
+              Founded by Evan Holt, a former wilderness guide with 15+ years of
+              experience, we're dedicated to promoting safe, responsible outdoor
+              recreation in the Pacific Northwest.
+            </p>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="currentYear"></span> The Great Outdoors. All rights
+            reserved.
+          </p>
+          <p class="mt-1">
+            Building a hiking community in the Pacific Northwest
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/trails-data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+  </body>
 </html>
