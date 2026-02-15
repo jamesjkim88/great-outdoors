@@ -85,6 +85,13 @@ document.addEventListener("DOMContentLoaded", function () {
   // ========================================
 
   // Search input
+    searchInput.addEventListener("input", () => {
+      // This retrieves the content inside the search bar and updates our filters
+      currentFilters.search = searchInput.value
+
+      // Call the method using the new search filter value
+      displayTrails()
+    })
 
   // Region filter
 
