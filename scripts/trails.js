@@ -86,27 +86,46 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Search input
     searchInput.addEventListener("input", () => {
-      // This retrieves the content inside the search bar and updates our filters
-      currentFilters.search = searchInput.value
+      // Change Search filter
+      currentFilters.search = searchInput.value;
 
-      // Call the method using the new search filter value
+      // Refresh display
       displayTrails()
     })
 
   // Region filter
+    regionFilter.addEventListener("change", () => {
+      // Change Region filter
+      currentFilters.region = regionFilter.value;
+
+      // Refresh display
+      displayTrails()
+    })
 
   // Difficulty filter
+    difficultyFilter.addEventListener("change", () => {
+      // Change Difficulty filter
+      difficultyFilter.region = regionFilter.value;
 
-  /*
+      // Refresh display
+      displayTrails();
+    })
+
 
   // Clear filters button
-    // Reset all filters
+    clearFiltersBtn.addEventListener("click", () => {
+      // Reset all filters
+      currentFilters.region = "All";
+      currentFilters.difficulty = "All";
+      currentFilters.search = "";
 
-    // Reset form elements
+      // Reset form elements
+      searchInput.value = "";
 
-    // Refresh display
+      // Refresh display
+      displayTrails();
+    })
 
-  */
 
   // ========================================
   // INITIAL DISPLAY
