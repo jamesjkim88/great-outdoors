@@ -121,6 +121,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Reset form elements
       searchInput.value = "";
+      regionFilter.value = "All"
+      difficultyFilter.value = "All"
 
       // Refresh display
       displayTrails();
