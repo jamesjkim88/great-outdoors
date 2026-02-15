@@ -6,6 +6,8 @@
  * STRUCTURE:
  * - Each trail is an object with properties like name, location, difficulty, etc.
  * - All trails are stored in an array called 'trails'
+ * 
+ * Note: all trails have been cross-referenced and up-to-date with https://www.alltrails.com/
  */
 
 // Array of all trails
@@ -15,9 +17,9 @@ const trails = [
     name: "Tamolitch Blue Pool",
     location: "McKenzie River, Oregon",
     region: "Oregon",
-    difficulty: "Easy",
-    distance: 4.0,
-    elevationGain: 200,
+    difficulty: "Moderate",
+    distance: 4.1,
+    elevationGain: 351,
     description:
       "A stunning turquoise pool where the McKenzie River emerges from underground. This lesser-known gem offers incredible photo opportunities and a peaceful hiking experience.",
     bestSeason: "Late Spring to Early Fall (May - October)",
@@ -59,8 +61,8 @@ const trails = [
     location: "Mountain Loop Highway, Washington",
     region: "Washington",
     difficulty: "Moderate",
-    distance: 5.4,
-    elevationGain: 1400,
+    distance: 6,
+    elevationGain: 1446,
     description:
       "A beautiful alpine lake surrounded by old-growth forest and dramatic cliffs. This trail features waterfalls and offers a rewarding destination without excessive crowds.",
     bestSeason: "Summer to Early Fall (July - September)",
@@ -132,8 +134,8 @@ const trails = [
     location: "Lincoln City, Oregon",
     region: "Oregon",
     difficulty: "Moderate",
-    distance: 3.5,
-    elevationGain: 1100,
+    distance: 4.8,
+    elevationGain: 1243,
     description:
       "Coastal headland with sweeping ocean views and lush meadows. A Nature Conservancy preserve offering some of the best coastal hiking in Oregon with opportunities to spot wildlife.",
     bestSeason:
@@ -158,12 +160,12 @@ const trails = [
   },
   {
     id: "silver-falls",
-    name: "Silver Falls State Park Loop",
+    name: "Trails of Ten Falls",
     location: "Sublimity, Oregon",
     region: "Oregon",
     difficulty: "Moderate",
-    distance: 7.2,
-    elevationGain: 800,
+    distance: 7.6,
+    elevationGain: 1184,
     description:
       "The Trail of Ten Falls showcases ten magnificent waterfalls, including several you can walk behind. Oregon's largest state park offers one of the best waterfall hikes in the country.",
     bestSeason: "Year-Round (best in spring for water flow)",
@@ -190,8 +192,8 @@ const trails = [
     location: "North Bend, Washington",
     region: "Washington",
     difficulty: "Hard",
-    distance: 9.4,
-    elevationGain: 4000,
+    distance: 10.7,
+    elevationGain: 4028,
     description:
       "One of the most challenging day hikes near Seattle. The relentless climb is rewarded with stunning views and the famous mailbox at the summit where hikers leave notes.",
     bestSeason: "Late Spring to Fall (June - October)",
@@ -218,8 +220,8 @@ const trails = [
     location: "Seaside, Oregon",
     region: "Oregon",
     difficulty: "Hard",
-    distance: 5.2,
-    elevationGain: 1600,
+    distance: 4.9,
+    elevationGain: 1796,
     description:
       "The highest peak in the Northern Coast Range offers breathtaking ocean views and unique wildflowers. This challenging hike features steep switchbacks and exposed ridges.",
     bestSeason: "Late Spring to Early Fall (May - September)",
@@ -245,9 +247,9 @@ const trails = [
     name: "Twin Falls",
     location: "North Bend, Washington",
     region: "Washington",
-    difficulty: "Easy",
+    difficulty: "Moderate",
     distance: 2.6,
-    elevationGain: 500,
+    elevationGain: 580,
     description:
       "A family-friendly trail leading to a beautiful two-tiered waterfall. Well-maintained path through old-growth forest makes this perfect for beginner hikers.",
     bestSeason: "Year-Round (best in spring)",
@@ -282,8 +284,8 @@ const trails = [
     location: "North Bend, Washington",
     region: "Washington",
     difficulty: "Moderate",
-    distance: 4.7,
-    elevationGain: 1300,
+    distance: 4,
+    elevationGain: 1171,
     description:
       "A shorter alternative to the famous Mount Si, offering great views with less commitment. Popular training hike for mountaineers and a great workout close to Seattle.",
     bestSeason: "Year-Round",
@@ -309,8 +311,8 @@ const trails = [
     location: "Issaquah, Washington",
     region: "Washington",
     difficulty: "Moderate",
-    distance: 7.2,
-    elevationGain: 1800,
+    distance: 6.8,
+    elevationGain: 1797,
     description:
       "A popular training hike with rewarding views of the Issaquah Valley and Cascade Mountains. Famous for watching paragliders launch from the summit.",
     bestSeason: "Year-Round",
