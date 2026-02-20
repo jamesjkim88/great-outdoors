@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Difficulty filter
     difficultyFilter.addEventListener("change", () => {
       // Change Difficulty filter
-      difficultyFilter.region = regionFilter.value;
+      currentFilters.difficulty = difficultyFilter.value;
 
       // Refresh display
       displayTrails();
