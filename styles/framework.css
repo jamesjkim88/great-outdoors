@@ -557,6 +557,11 @@ textarea.form-control {
   min-height: 80vh;
 }
 
+.hero-sm {
+  min-height: 40vh;
+  padding: 3rem 0;
+}
+
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -571,6 +576,10 @@ textarea.form-control {
   z-index: 1;
   max-width: 768px;
   margin-top: 8rem;
+}
+
+.hero-content-sm {
+  margin-top: 4rem !important;
 }
 
 .hero-title {
