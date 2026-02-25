@@ -19,7 +19,9 @@ const trails = [
     region: "Oregon",
     difficulty: "Moderate",
     distance: 4.1,
+    distanceBucket: "Low",
     elevationGain: 351,
+    elevationBucket: "Low",
     description:
       "A stunning turquoise pool where the McKenzie River emerges from underground. This lesser-known gem offers incredible photo opportunities and a peaceful hiking experience.",
     bestSeason: [
@@ -67,7 +69,9 @@ const trails = [
     region: "Washington",
     difficulty: "Moderate",
     distance: 6,
+    distanceBucket: "Medium",
     elevationGain: 1446,
+    elevationBucket: "Medium",
     description:
       "A beautiful alpine lake surrounded by old-growth forest and dramatic cliffs. This trail features waterfalls and offers a rewarding destination without excessive crowds.",
     bestSeason: [
@@ -107,7 +111,9 @@ const trails = [
     region: "Oregon",
     difficulty: "Moderate",
     distance: 3.4,
+    distanceBucket: "Low",
     elevationGain: 1000,
+    elevationBucket: "Medium",
     description:
       "A relatively short but steep climb rewarded with panoramic views and spectacular wildflower meadows. This lesser-known trail offers solitude and stunning vistas of the Cascade peaks.",
     bestSeason: [
@@ -146,7 +152,9 @@ const trails = [
     region: "Oregon",
     difficulty: "Moderate",
     distance: 4.8,
+    distanceBucket: "Medium",
     elevationGain: 1243,
+    elevationBucket: "Medium",
     description:
       "Coastal headland with sweeping ocean views and lush meadows. A Nature Conservancy preserve offering some of the best coastal hiking in Oregon with opportunities to spot wildlife.",
     bestSeason: [
@@ -180,7 +188,9 @@ const trails = [
     region: "Oregon",
     difficulty: "Moderate",
     distance: 7.6,
+    distanceBucket: "High",
     elevationGain: 1184,
+    elevationBucket: "Medium",
     description:
       "The Trail of Ten Falls showcases ten magnificent waterfalls, including several you can walk behind. Oregon's largest state park offers one of the best waterfall hikes in the country.",
     bestSeason: [
@@ -214,7 +224,9 @@ const trails = [
     region: "Washington",
     difficulty: "Hard",
     distance: 10.7,
+    distanceBucket: "Extreme",
     elevationGain: 4028,
+    elevationBucket: "Extreme",
     description:
       "One of the most challenging day hikes near Seattle. The relentless climb is rewarded with stunning views and the famous mailbox at the summit where hikers leave notes.",
     bestSeason: [
@@ -247,7 +259,9 @@ const trails = [
     region: "Oregon",
     difficulty: "Hard",
     distance: 4.9,
+    distanceBucket: "Medium",
     elevationGain: 1796,
+    elevationBucket: "High",
     description:
       "The highest peak in the Northern Coast Range offers breathtaking ocean views and unique wildflowers. This challenging hike features steep switchbacks and exposed ridges.",
     bestSeason: [
@@ -279,7 +293,9 @@ const trails = [
     region: "Washington",
     difficulty: "Moderate",
     distance: 2.6,
+    distanceBucket: "Low",
     elevationGain: 580,
+    elevationBucket: "Medium",
     description:
       "A family-friendly trail leading to a beautiful two-tiered waterfall. Well-maintained path through old-growth forest makes this perfect for beginner hikers.",
     bestSeason: [
@@ -321,7 +337,9 @@ const trails = [
     region: "Washington",
     difficulty: "Moderate",
     distance: 4,
+    distanceBucket: "Medium",
     elevationGain: 1171,
+    elevationBucket: "Medium",
     description:
       "A shorter alternative to the famous Mount Si, offering great views with less commitment. Popular training hike for mountaineers and a great workout close to Seattle.",
     bestSeason: [
@@ -354,7 +372,9 @@ const trails = [
     region: "Washington",
     difficulty: "Moderate",
     distance: 6.8,
+    distanceBucket: "Medium",
     elevationGain: 1797,
+    elevationBucket: "High",
     description:
       "A popular training hike with rewarding views of the Issaquah Valley and Cascade Mountains. Famous for watching paragliders launch from the summit.",
     bestSeason: [
