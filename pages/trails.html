@@ -9,14 +9,14 @@
     />
     <title>Trail Directory - The Great Outdoors</title>
 
-    <link rel="stylesheet" href="css/framework.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="../styles/framework.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
   </head>
   <body>
     <!-- NAVIGATION -->
     <nav class="navbar">
       <div class="container navbar-container">
-        <a href="index.html" class="navbar-brand">
+        <a href="../index.html" class="navbar-brand">
           <span>🏔️</span>
           <div>
             <div>The Great Outdoors</div>
@@ -33,18 +33,18 @@
         </button>
 
         <ul class="navbar-nav" id="navMenu">
-          <li><a href="#" class="nav-link">Home</a></li>
-          <li><a href="#" class="nav-link active">Trails</a></li>
-          <li><a href="#" class="nav-link">Safety</a></li>
-          <li><a href="#" class="nav-link">Community</a></li>
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="trails.html" class="nav-link active">Trails</a></li>
+          <li><a href="safety.html" class="nav-link">Safety</a></li>
+          <li><a href="community.html" class="nav-link">Community</a></li>
         </ul>
       </div>
     </nav>
 
     <!-- PAGE HEADER -->
-    <section class="hero">
+    <section class="hero hero-sm">
       <div class="container">
-        <div class="hero-content">
+        <div class="hero-content hero-content-sm">
           <h1 class="hero-title">Trail Directory</h1>
           <p class="hero-text">
             Browse our curated collection of Pacific Northwest trails. Use
@@ -66,7 +66,7 @@
       "
     >
       <div class="container py-3">
-        <div class="flex gap-3 flex-wrap">
+        <div class="flex gap-3 flex-col">
           <!-- Search Bar -->
           <div style="flex: 1; min-width: 250px">
             <input
@@ -107,6 +107,73 @@
               <option value="Moderate">Moderate</option>
               <option value="Hard">Hard</option>
             </select>
+          </div>
+
+          <!-- Distance Filter -->
+          <div>
+            <label
+              for="distanceFilter"
+              class="form-label text-sm"
+              style="margin-bottom: 0.25rem"
+              >Distance</label
+            >
+            <select id="distanceFilter" class="form-control">
+              <option value="All">All Distances</option>
+              <option value="Low">0-4 miles</option>
+              <option value="Medium">4-7 miles</option>
+              <option value="High">7-10 miles</option>
+              <option value="Extreme">10+ miles</option>
+            </select>
+          </div>
+
+          <!-- Elevation Gain Filter -->
+          <div>
+            <label
+              for="elevationFilter"
+              class="form-label text-sm"
+              style="margin-bottom: 0.25rem"
+              >Elevation</label
+            >
+            <select id="elevationFilter" class="form-control">
+              <option value="All">All Elevations</option>
+              <option value="Low">0-500 ft</option>
+              <option value="Medium">500-1,500 ft</option>
+              <option value="High">1500-3,000 ft</option>
+              <option value="Extreme">3000+ ft</option>
+            </select>
+          </div>
+
+          <!-- Season Filter -->
+          <div>
+            <label
+              for="seasonFilter"
+              class="form-label text-sm"
+              style="margin-bottom: 0.25rem"
+              >Season</label
+            >
+            <select id="seasonFilter" class="form-control">
+              <option value="All">All Seasons</option>
+              <option value="Winter">Winter</option>
+              <option value="Spring">Spring</option>
+              <option value="Summer">Summer</option>
+              <option value="Fall">Fall</option>
+            </select>
+          </div>
+            
+          <!-- Crowd Level Filter -->
+          <div>
+            <label
+              for="crowdLevelFilter"
+              class="form-label text-sm"
+              style="margin-bottom: 0.25rem"
+              >Crowd Level</label
+            >
+            <select id="crowdLevelFilter" class="form-control">
+              <option value="All">All Crowd Levels</option>
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>            
           </div>
         </div>
 
@@ -196,8 +263,8 @@
     </footer>
 
     <!-- JAVASCRIPT -->
-    <script src="js/trails-data.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/trails.js"></script>
+    <script src="../scripts/trails-data.js"></script>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/trails.js"></script>
   </body>
 </html>
