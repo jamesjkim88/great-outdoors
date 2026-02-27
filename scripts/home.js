@@ -39,8 +39,5 @@ document.addEventListener("DOMContentLoaded", function () {
       container.innerHTML =
         '<p class="text-center text-stone-600">No featured trails available at this time.</p>';
     }
-    else {
-      console.log("Featured trails rendered successfully");
-    }
   }
 });
