@@ -3,9 +3,135 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Join The Great Outdoors hiking community. Register for guided hikes, support our mission, and connect with fellow outdoor enthusiasts."
+    />
+    <title>Community - The Great Outdoors</title>
+
+    <link rel="stylesheet" href="../styles/framework.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
   </head>
   <body>
-    <h1>community page</h1>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+      <div class="container navbar-container">
+        <a href="index.html" class="navbar-brand">
+          <span>🏔️</span>
+          <div>
+            <div>The Great Outdoors</div>
+            <div class="text-xs text-emerald-100">Pacific Northwest Hiking</div>
+          </div>
+        </a>
+
+        <button
+          class="navbar-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+
+        <ul class="navbar-nav" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="trails.html" class="nav-link">Trails</a></li>
+          <li><a href="safety.html" class="nav-link">Safety</a></li>
+          <li>
+            <a href="community.html" class="nav-link active">Community</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero hero-sm">
+      <div class="container">
+        <div class="hero-content m-0">
+          <div style="font-size: 4rem; margin-bottom: 1.5rem">👥</div>
+          <h1 class="hero-title">Join Our Community</h1>
+          <p class="hero-text">
+            Connect with fellow hikers, participate in guided hikes, and support
+            responsible outdoor recreation in the Pacific Northwest.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <div class="container section-lg">
+      <!-- Upcoming Guided Hikes -->
+
+      <!-- Registration Form -->
+
+      <!-- Support Section -->
+
+      <!-- Newsletter Signup -->
+
+      <!-- Community Benefits -->
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="grid grid-cols-3 gap-4">
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <span style="font-size: 1.5rem">🏔️</span>
+              <span class="font-bold text-lg" style="color: white"
+                >The Great Outdoors</span
+              >
+            </div>
+            <p class="text-sm mb-3">
+              Helping people explore the Pacific Northwest responsibly while
+              protecting natural resources.
+            </p>
+            <div class="text-sm">
+              <div class="mb-2">📍 Bend, Oregon</div>
+              <div>
+                ✉️
+                <a
+                  href="mailto:info@thegreatoutdoors.org"
+                  style="color: #d6d3d1"
+                  >info@thegreatoutdoors.org</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="trails.html">Browse Trails</a></li>
+              <li><a href="safety.html">Hiking Safety</a></li>
+              <li><a href="community.html">Join Community</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Our Mission</h3>
+            <p class="text-sm">
+              Founded by Evan Holt, a former wilderness guide with 15+ years of
+              experience, we're dedicated to promoting safe, responsible outdoor
+              recreation in the Pacific Northwest.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="currentYear"></span> The Great Outdoors. All rights
+            reserved.
+          </p>
+          <p class="mt-1">
+            Building a hiking community in the Pacific Northwest
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/trails-data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/community.js"></script>
   </body>
 </html>
