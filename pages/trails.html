@@ -78,102 +78,112 @@
             />
           </div>
 
-          <!-- Region Filter -->
-          <div>
-            <label
-              for="regionFilter"
-              class="form-label text-sm"
-              style="margin-bottom: 0.25rem"
-              >Region</label
-            >
-            <select id="regionFilter" class="form-control">
-              <option value="All">All Regions</option>
-              <option value="Oregon">Oregon</option>
-              <option value="Washington">Washington</option>
-            </select>
-          </div>
+          <!-- Container for Filters -->
+          <div
+            style="
+              display: grid;
+              gap: 20px;
+              grid-template-columns: auto auto auto;
+              grid-template-rows: auto auto;
+            "
+          >
+            <!-- Region Filter -->
+            <div>
+              <label
+                for="regionFilter"
+                class="form-label text-sm"
+                style="margin-bottom: 0.25rem"
+                >Region</label
+              >
+              <select id="regionFilter" class="form-control">
+                <option value="All">All Regions</option>
+                <option value="Oregon">Oregon</option>
+                <option value="Washington">Washington</option>
+              </select>
+            </div>
 
-          <!-- Difficulty Filter -->
-          <div>
-            <label
-              for="difficultyFilter"
-              class="form-label text-sm"
-              style="margin-bottom: 0.25rem"
-              >Difficulty</label
-            >
-            <select id="difficultyFilter" class="form-control">
-              <option value="All">All Levels</option>
-              <option value="Easy">Easy</option>
-              <option value="Moderate">Moderate</option>
-              <option value="Hard">Hard</option>
-            </select>
-          </div>
+            <!-- Difficulty Filter -->
+            <div>
+              <label
+                for="difficultyFilter"
+                class="form-label text-sm"
+                style="margin-bottom: 0.25rem"
+                >Difficulty</label
+              >
+              <select id="difficultyFilter" class="form-control">
+                <option value="All">All Levels</option>
+                <option value="Easy">Easy</option>
+                <option value="Moderate">Moderate</option>
+                <option value="Hard">Hard</option>
+              </select>
+            </div>
 
-          <!-- Distance Filter -->
-          <div>
-            <label
-              for="distanceFilter"
-              class="form-label text-sm"
-              style="margin-bottom: 0.25rem"
-              >Distance</label
-            >
-            <select id="distanceFilter" class="form-control">
-              <option value="All">All Distances</option>
-              <option value="Low">0-4 miles</option>
-              <option value="Medium">4-7 miles</option>
-              <option value="High">7-10 miles</option>
-              <option value="Extreme">10+ miles</option>
-            </select>
-          </div>
+            <!-- Distance Filter -->
+            <div>
+              <label
+                for="distanceFilter"
+                class="form-label text-sm"
+                style="margin-bottom: 0.25rem"
+                >Distance</label
+              >
+              <select id="distanceFilter" class="form-control">
+                <option value="All">All Distances</option>
+                <option value="Low">0-4 miles</option>
+                <option value="Medium">4-7 miles</option>
+                <option value="High">7-10 miles</option>
+                <option value="Extreme">10+ miles</option>
+              </select>
+            </div>
 
-          <!-- Elevation Gain Filter -->
-          <div>
-            <label
-              for="elevationFilter"
-              class="form-label text-sm"
-              style="margin-bottom: 0.25rem"
-              >Elevation</label
-            >
-            <select id="elevationFilter" class="form-control">
-              <option value="All">All Elevations</option>
-              <option value="Low">0-500 ft</option>
-              <option value="Medium">500-1,500 ft</option>
-              <option value="High">1500-3,000 ft</option>
-              <option value="Extreme">3000+ ft</option>
-            </select>
-          </div>
+            <!-- Elevation Gain Filter -->
+            <div>
+              <label
+                for="elevationFilter"
+                class="form-label text-sm"
+                style="margin-bottom: 0.25rem"
+                >Elevation</label
+              >
+              <select id="elevationFilter" class="form-control">
+                <option value="All">All Elevations</option>
+                <option value="Low">0-500 ft</option>
+                <option value="Medium">500-1,500 ft</option>
+                <option value="High">1500-3,000 ft</option>
+                <option value="Extreme">3000+ ft</option>
+              </select>
+            </div>
 
-          <!-- Season Filter -->
-          <div>
-            <label
-              for="seasonFilter"
-              class="form-label text-sm"
-              style="margin-bottom: 0.25rem"
-              >Season</label
-            >
-            <select id="seasonFilter" class="form-control">
-              <option value="All">All Seasons</option>
-              <option value="Winter">Winter</option>
-              <option value="Spring">Spring</option>
-              <option value="Summer">Summer</option>
-              <option value="Fall">Fall</option>
-            </select>
-          </div>
-            
-          <!-- Crowd Level Filter -->
-          <div>
-            <label
-              for="crowdLevelFilter"
-              class="form-label text-sm"
-              style="margin-bottom: 0.25rem"
-              >Crowd Level</label
-            >
-            <select id="crowdLevelFilter" class="form-control">
-              <option value="All">All Crowd Levels</option>
-              <option value="Low">Low</option>
-              <option value="Medium">Medium</option>
-              <option value="High">High</option>
-            </select>            
+            <!-- Season Filter -->
+            <div>
+              <label
+                for="seasonFilter"
+                class="form-label text-sm"
+                style="margin-bottom: 0.25rem"
+                >Season</label
+              >
+              <select id="seasonFilter" class="form-control">
+                <option value="All">All Seasons</option>
+                <option value="Winter">Winter</option>
+                <option value="Spring">Spring</option>
+                <option value="Summer">Summer</option>
+                <option value="Fall">Fall</option>
+              </select>
+            </div>
+              
+            <!-- Crowd Level Filter -->
+            <div>
+              <label
+                for="crowdLevelFilter"
+                class="form-label text-sm"
+                style="margin-bottom: 0.25rem"
+                >Crowd Level</label
+              >
+              <select id="crowdLevelFilter" class="form-control">
+                <option value="All">All Crowd Levels</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+              </select>            
+            </div>
           </div>
         </div>
 
