@@ -407,7 +407,6 @@ const trails = [
  * HELPER FUNCTIONS
  * These make it easier to work with trail data
  */
-
 // Get only featured trails (for homepage)
 function getFeaturedTrails() {
   return trails.filter((trail) => trail.featured);
