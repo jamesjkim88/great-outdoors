@@ -3,9 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Trail Detail</title>
+    <link rel="stylesheet" href="../styles/framework.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
   </head>
   <body>
-    <h1>trail-detail page</h1>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+      <div class="container navbar-container">
+        <a href="./index.html" class="navbar-brand">
+          <span class="logo-emoji">🏔️</span>
+          <div>
+            <div class="brand-name">The Great Outdoors</div>
+            <div class="brand-subtitle text-xs">Pacific Northwest Hiking</div>
+          </div>
+        </a>
+
+        <button
+          class="navbar-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+
+        <ul class="navbar-nav" id="navMenu">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="./pages/trails.html" class="nav-link">Trails</a></li>
+          <li><a href="./pages/safety.html" class="nav-link">Safety</a></li>
+          <li>
+            <a href="./pages/community.html" class="nav-link">Community</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- This is the container for the trails' details. 
+     Content is injected via trails-details.js -->
+    <div id="trailContent"></div>
   </body>
+    <script src="../scripts/trails-details.js"></script>
+    <script src="../scripts/trails-data.js"></script>
+    <script src="../scripts/main.js"></script>
 </html>
