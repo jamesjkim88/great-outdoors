@@ -29,8 +29,8 @@
 
         <ul class="navbar-nav" id="navMenu">
           <li><a href="../index.html" class="nav-link">Home</a></li>
-          <li><a href="./pages/trails.html" class="nav-link">Trails</a></li>
-          <li><a href="./pages/safety.html" class="nav-link">Safety</a></li>
+          <li><a href="trails.html" class="nav-link">Trails</a></li>
+          <li><a href="safety.html" class="nav-link">Safety</a></li>
           <li>
             <a href="./pages/community.html" class="nav-link">Community</a>
           </li>
@@ -51,4 +51,32 @@
   <script src="../scripts/trails-details.js"></script>
   <script src="../scripts/trails-data.js"></script>
   <script src="../scripts/main.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js"
+    integrity="sha512-MpDFIChbcXl2QgipQrt1VcPHMldRILetapBl5MPCA9Y8r7qvlwx1/Mc9hNTzY+kS5kX6PdoDq41ws1HiVNLdZA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  >
+  </script>
+  <script>
+    document.addEventListener("trailContentReady", () => {
+      document.getElementById("printBtn").addEventListener("click", () => {
+        window.scrollTo(0, 0);
+        const element = document.getElementById("trailContent");
+
+        const options = {
+          margin: 10,
+          filename: trailId,
+          image: { type: "jpeg", quality: 0.98 },
+          html2canvas: {
+            scale: 3,
+            scrollY: 0
+          },
+          jsPDF: { unit: "pt", format: "b4", orientation: "landscape" }
+        };
+
+        html2pdf().set(options).from(element).save();
+      });
+    });
+  </script>
 </html>

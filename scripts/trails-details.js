@@ -3,11 +3,13 @@
  * Displays detailed information about a specific trail
  */
 
+let trailId;
+
 document.addEventListener("DOMContentLoaded", function () {
   // Get the trail ID from the URL
   // Example: trail-detail.html?id=tamolitch-blue-pool
   const urlParams = new URLSearchParams(window.location.search);
-  const trailId = urlParams.get("id");
+  trailId = urlParams.get("id");
 
   // Get the container where we'll put the trail info
   const contentContainer = document.getElementById("trailContent");
@@ -218,12 +220,15 @@ document.addEventListener("DOMContentLoaded", function () {
                             </div>
                             
                             <!-- Call to Action Buttons -->
-                            <div style="border-top: 1px solid #e7e5e4; padding-top: 1.5rem;">
+                            <div style="border-top: 1px solid #e7e5e4; padding-top: 1.5rem; margin: 1.5rem;">
                                 <a href="safety.html" class="btn btn-primary btn-block mb-2">
                                     Review Safety Tips
                                 </a>
-                                <a href="community.html" class="btn btn-secondary btn-block">
+                                <a href="community.html" class="btn btn-secondary btn-block mb-2">
                                     Join a Guided Hike
+                                </a>
+                                <a id="printBtn" class="btn btn-secondary btn-block">
+                                    Download page as PDF
                                 </a>
                             </div>
                         </div>
@@ -257,4 +262,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const sum = reviews.reduce((total, review) => total + review.rating, 0);
     return sum / reviews.length;
   }
+
+  document.dispatchEvent(new Event("trailContentReady"));
 });
+
