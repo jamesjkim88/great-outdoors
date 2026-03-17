@@ -218,12 +218,15 @@ document.addEventListener("DOMContentLoaded", function () {
                             </div>
                             
                             <!-- Call to Action Buttons -->
-                            <div style="border-top: 1px solid #e7e5e4; padding-top: 1.5rem;">
+                            <div style="border-top: 1px solid #e7e5e4; padding-top: 1.5rem; margin: 1.5rem;">
                                 <a href="safety.html" class="btn btn-primary btn-block mb-2">
                                     Review Safety Tips
                                 </a>
-                                <a href="community.html" class="btn btn-secondary btn-block">
+                                <a href="community.html" class="btn btn-secondary btn-block mb-2">
                                     Join a Guided Hike
+                                </a>
+                                <a id="printBtn" class="btn btn-secondary btn-block">
+                                    Download page as PDF
                                 </a>
                             </div>
                         </div>
