@@ -3,11 +3,13 @@
  * Displays detailed information about a specific trail
  */
 
+let trailId;
+
 document.addEventListener("DOMContentLoaded", function () {
   // Get the trail ID from the URL
   // Example: trail-detail.html?id=tamolitch-blue-pool
   const urlParams = new URLSearchParams(window.location.search);
-  const trailId = urlParams.get("id");
+  trailId = urlParams.get("id");
 
   // Get the container where we'll put the trail info
   const contentContainer = document.getElementById("trailContent");
@@ -260,4 +262,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const sum = reviews.reduce((total, review) => total + review.rating, 0);
     return sum / reviews.length;
   }
+
+  document.dispatchEvent(new Event("trailContentReady"));
 });
+
