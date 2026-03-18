@@ -116,7 +116,7 @@ function createTrailCard(trail) {
         <div style="padding: 1.5rem;">
             <!-- Trail Name -->
             <h3 class="card-title">
-                <a href="trail-detail.html?id=${trail.id}" style="color: inherit; text-decoration: none;">
+                <a href="../pages/trail-detail.html?id=${trail.id}" style="color: inherit; text-decoration: none;">
                     ${trail.name}
                 </a>
             </h3>
@@ -160,7 +160,7 @@ function createTrailCard(trail) {
             </div>
             
             <!-- View Details Button -->
-            <a href="trail-detail.html?id=${trail.id}" class="btn btn-primary btn-block">
+            <a href="../pages/trail-detail.html?id=${trail.id}" class="btn btn-primary btn-block">
                 View Trail Details
             </a>
         </div>
