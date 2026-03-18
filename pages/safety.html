@@ -3,9 +3,724 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Essential hiking safety tips for the Pacific Northwest including The Ten Essentials, seasonal awareness, and Leave No Trace principles."
+    />
+    <title>Hiking Safety & Education - The Great Outdoors</title>
+
+    <link rel="stylesheet" href="../styles/framework.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
   </head>
   <body>
-    <h1>safety page</h1>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+      <div class="container navbar-container">
+        <a href="../index.html" class="navbar-brand">
+          <span>🏔️</span>
+          <div>
+            <div>The Great Outdoors</div>
+            <div class="text-xs text-emerald-100">Pacific Northwest Hiking</div>
+          </div>
+        </a>
+
+        <button
+          class="navbar-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+
+        <ul class="navbar-nav" id="navMenu">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="trails.html" class="nav-link">Trails</a></li>
+          <li><a href="safety.html" class="nav-link active">Safety</a></li>
+          <li><a href="community.html" class="nav-link">Community</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero hero-sm">
+      <div class="container">
+        <div class="hero-content m-0">
+          <div style="font-size: 4rem; margin-bottom: 1.5rem">⚠️</div>
+          <h1 class="hero-title">Hiking Safety & Education</h1>
+          <p class="hero-text">
+            Whether you're a beginner or experienced hiker, safety should always
+            be your top priority. Learn essential practices to make your Pacific
+            Northwest adventures safe and enjoyable.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <div class="container section-lg">
+      <!-- The Ten Essentials -->
+      <section class="card mb-4">
+        <div class="flex items-center gap-2 mb-4">
+          <span style="font-size: 2rem">🎒</span>
+          <h2 class="m-0">The Ten Essentials</h2>
+        </div>
+        <p class="mb-4">
+          Never hit the trail without these essential items. Even on short day
+          hikes, conditions can change quickly in the Pacific Northwest.
+        </p>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div class="flex items-start gap-3 p-3 bg-stone-50 rounded">
+            <span style="font-size: 1.5rem">🗺️</span>
+            <div>
+              <h4 class="mb-1">Navigation</h4>
+              <p class="text-sm text-stone-600 m-0">
+                Map, compass, and GPS device or app. Don't rely solely on your
+                phone.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 p-3 bg-stone-50 rounded">
+            <span style="font-size: 1.5rem">☀️</span>
+            <div>
+              <h4 class="mb-1">Sun Protection</h4>
+              <p class="text-sm text-stone-600 m-0">
+                Sunglasses, sunscreen, and hat. UV exposure is high at
+                elevation.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 p-3 bg-stone-50 rounded">
+            <span style="font-size: 1.5rem">🧥</span>
+            <div>
+              <h4 class="mb-1">Insulation</h4>
+              <p class="text-sm text-stone-600 m-0">
+                Extra clothing layers. Weather can change rapidly in the
+                mountains.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 p-3 bg-stone-50 rounded">
+            <span style="font-size: 1.5rem">🔦</span>
+            <div>
+              <h4 class="mb-1">Illumination</h4>
+              <p class="text-sm text-stone-600 m-0">
+                Headlamp or flashlight with extra batteries.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 p-3 bg-stone-50 rounded">
+            <span style="font-size: 1.5rem">🩹</span>
+            <div>
+              <h4 class="mb-1">First Aid</h4>
+              <p class="text-sm text-stone-600 m-0">
+                Basic first aid kit with bandages, medications, and blister
+                treatment.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 p-3 bg-stone-50 rounded">
+            <span style="font-size: 1.5rem">🔥</span>
+            <div>
+              <h4 class="mb-1">Fire Starter</h4>
+              <p class="text-sm text-stone-600 m-0">
+                Matches, lighter, and fire starter in waterproof container.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 p-3 bg-stone-50 rounded">
+            <span style="font-size: 1.5rem">🔧</span>
+            <div>
+              <h4 class="mb-1">Repair Kit</h4>
+              <p class="text-sm text-stone-600 m-0">
+                Knife or multi-tool, duct tape, and gear repair supplies.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 p-3 bg-stone-50 rounded">
+            <span style="font-size: 1.5rem">🍎</span>
+            <div>
+              <h4 class="mb-1">Nutrition</h4>
+              <p class="text-sm text-stone-600 m-0">
+                Extra food beyond what you plan to eat. High-energy snacks.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 p-3 bg-stone-50 rounded">
+            <span style="font-size: 1.5rem">💧</span>
+            <div>
+              <h4 class="mb-1">Hydration</h4>
+              <p class="text-sm text-stone-600 m-0">
+                Water and purification method. Drink before you feel thirsty.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 p-3 bg-stone-50 rounded">
+            <span style="font-size: 1.5rem">⛺</span>
+            <div>
+              <h4 class="mb-1">Emergency Shelter</h4>
+              <p class="text-sm text-stone-600 m-0">
+                Emergency bivy, space blanket, or large garbage bags.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seasonal Awareness -->
+      <section class="card mb-4">
+        <div class="flex items-center gap-2 mb-4">
+          <span style="font-size: 2rem">☁️</span>
+          <h2 class="m-0">Seasonal Awareness</h2>
+        </div>
+        <p class="mb-4">
+          The Pacific Northwest experiences distinct seasons, each with unique
+          challenges and considerations.
+        </p>
+
+        <div class="grid grid-cols-2 gap-3">
+          <!-- Spring -->
+          <div
+            class="card p-4"
+            style="background-color: #dcfce7; border-color: #86efac"
+          >
+            <div class="flex items-center gap-2 mb-3">
+              <span style="font-size: 1.5rem">💧</span>
+              <h3 class="m-0">Spring (March - May)</h3>
+            </div>
+            <ul style="list-style: none; padding: 0">
+              <li class="flex items-start gap-2 mb-2">
+                <span>✓</span>
+                <span
+                  ><strong>Rain:</strong> Expect wet conditions. Bring
+                  waterproof gear.</span
+                >
+              </li>
+              <li class="flex items-start gap-2 mb-2">
+                <span>✓</span>
+                <span
+                  ><strong>Snow:</strong> High elevation trails may still have
+                  snow.</span
+                >
+              </li>
+              <li class="flex items-start gap-2 mb-2">
+                <span>✓</span>
+                <span
+                  ><strong>Runoff:</strong> Rivers and streams are high.</span
+                >
+              </li>
+              <li class="flex items-start gap-2">
+                <span>✓</span>
+                <span
+                  ><strong>Mud:</strong> Trails can be muddy and slippery.</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Summer -->
+          <div
+            class="card p-4"
+            style="background-color: #fef9c3; border-color: #fcd34d"
+          >
+            <div class="flex items-center gap-2 mb-3">
+              <span style="font-size: 1.5rem">☀️</span>
+              <h3 class="m-0">Summer (June - August)</h3>
+            </div>
+            <ul style="list-style: none; padding: 0">
+              <li class="flex items-start gap-2 mb-2">
+                <span>✓</span>
+                <span
+                  ><strong>Heat:</strong> Start early to avoid midday
+                  heat.</span
+                >
+              </li>
+              <li class="flex items-start gap-2 mb-2">
+                <span>✓</span>
+                <span
+                  ><strong>Crowds:</strong> Popular trails are busiest.</span
+                >
+              </li>
+              <li class="flex items-start gap-2 mb-2">
+                <span>✓</span>
+                <span
+                  ><strong>Fire:</strong> Be aware of fire restrictions.</span
+                >
+              </li>
+              <li class="flex items-start gap-2">
+                <span>✓</span>
+                <span
+                  ><strong>Water:</strong> Streams may be low. Carry
+                  extra.</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Fall -->
+          <div
+            class="card p-4"
+            style="background-color: #fed7aa; border-color: #fdba74"
+          >
+            <div class="flex items-center gap-2 mb-3">
+              <span style="font-size: 1.5rem">🍂</span>
+              <h3 class="m-0">Fall (September - November)</h3>
+            </div>
+            <ul style="list-style: none; padding: 0">
+              <li class="flex items-start gap-2 mb-2">
+                <span>✓</span>
+                <span
+                  ><strong>Weather:</strong> Conditions become
+                  unpredictable.</span
+                >
+              </li>
+              <li class="flex items-start gap-2 mb-2">
+                <span>✓</span>
+                <span
+                  ><strong>Daylight:</strong> Days get shorter. Bring
+                  headlamp.</span
+                >
+              </li>
+              <li class="flex items-start gap-2 mb-2">
+                <span>✓</span>
+                <span
+                  ><strong>Hunting:</strong> Wear bright colors during
+                  season.</span
+                >
+              </li>
+              <li class="flex items-start gap-2">
+                <span>✓</span>
+                <span><strong>Leaves:</strong> Trail may be obscured.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Winter -->
+          <div
+            class="card p-4"
+            style="background-color: #dbeafe; border-color: #93c5fd"
+          >
+            <div class="flex items-center gap-2 mb-3">
+              <span style="font-size: 1.5rem">❄️</span>
+              <h3 class="m-0">Winter (December - February)</h3>
+            </div>
+            <ul style="list-style: none; padding: 0">
+              <li class="flex items-start gap-2 mb-2">
+                <span>✓</span>
+                <span
+                  ><strong>Snow/Ice:</strong> Many trails require
+                  snowshoes.</span
+                >
+              </li>
+              <li class="flex items-start gap-2 mb-2">
+                <span>✓</span>
+                <span
+                  ><strong>Avalanche:</strong> Check forecasts for alpine
+                  areas.</span
+                >
+              </li>
+              <li class="flex items-start gap-2 mb-2">
+                <span>✓</span>
+                <span
+                  ><strong>Shorter Days:</strong> Very limited daylight.</span
+                >
+              </li>
+              <li class="flex items-start gap-2">
+                <span>✓</span>
+                <span
+                  ><strong>Cold:</strong> Hypothermia risk. Dress in
+                  layers.</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Wildlife Safety -->
+      <section class="card mb-4 bg-amber-50 border-amber">
+        <div class="flex items-center gap-2 mb-4">
+          <span style="font-size: 2rem">🐻</span>
+          <h2 class="m-0">Wildlife Safety</h2>
+        </div>
+
+        <div class="mb-4">
+          <h3>Bears</h3>
+          <p class="mb-2">
+            Black bears are common in the Pacific Northwest. While attacks are
+            rare, it's important to be prepared.
+          </p>
+          <ul>
+            <li>Make noise while hiking to avoid surprising bears</li>
+            <li>Carry bear spray and know how to use it</li>
+            <li>Store food properly and never approach or feed wildlife</li>
+            <li>If you see a bear, back away slowly and don't run</li>
+          </ul>
+        </div>
+
+        <div class="mb-4">
+          <h3>Cougars</h3>
+          <p class="mb-2">
+            Mountain lions are elusive but present in the region.
+          </p>
+          <ul>
+            <li>Hike in groups when possible</li>
+            <li>Keep children close and within sight</li>
+            <li>
+              If you encounter a cougar, make yourself look large and don't run
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Insects & Plants</h3>
+          <ul>
+            <li>
+              Watch for ticks in grassy areas. Check yourself after hiking
+            </li>
+            <li>Learn to identify poison oak and avoid contact</li>
+            <li>Bees and wasps are most active in late summer</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Leave No Trace -->
+      <section class="card mb-4 bg-emerald-50 border-emerald">
+        <div class="flex items-center gap-2 mb-4">
+          <span style="font-size: 2rem">🍃</span>
+          <h2 class="m-0">Leave No Trace Principles</h2>
+        </div>
+        <p class="mb-4">
+          These seven principles help protect our natural areas and ensure they
+          remain beautiful for future generations.
+        </p>
+
+        <div style="display: flex; flex-direction: column; gap: 1rem">
+          <div class="flex items-start gap-3 p-3 bg-white rounded">
+            <div
+              style="
+                flex-shrink: 0;
+                width: 2.5rem;
+                height: 2.5rem;
+                background-color: #047857;
+                color: white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+              "
+            >
+              1
+            </div>
+            <div>
+              <h4 class="mb-1">Plan Ahead and Prepare</h4>
+              <p class="text-sm m-0">
+                Know the regulations, prepare for extreme weather, and schedule
+                your trip to avoid times of high use.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 p-3 bg-white rounded">
+            <div
+              style="
+                flex-shrink: 0;
+                width: 2.5rem;
+                height: 2.5rem;
+                background-color: #047857;
+                color: white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+              "
+            >
+              2
+            </div>
+            <div>
+              <h4 class="mb-1">Travel and Camp on Durable Surfaces</h4>
+              <p class="text-sm m-0">
+                Stay on designated trails, camp on established sites, and keep
+                campsites small.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 p-3 bg-white rounded">
+            <div
+              style="
+                flex-shrink: 0;
+                width: 2.5rem;
+                height: 2.5rem;
+                background-color: #047857;
+                color: white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+              "
+            >
+              3
+            </div>
+            <div>
+              <h4 class="mb-1">Dispose of Waste Properly</h4>
+              <p class="text-sm m-0">
+                Pack out all trash, deposit human waste properly, and wash
+                dishes away from water sources.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 p-3 bg-white rounded">
+            <div
+              style="
+                flex-shrink: 0;
+                width: 2.5rem;
+                height: 2.5rem;
+                background-color: #047857;
+                color: white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+              "
+            >
+              4
+            </div>
+            <div>
+              <h4 class="mb-1">Leave What You Find</h4>
+              <p class="text-sm m-0">
+                Don't take rocks, plants, or artifacts. Leave areas as you found
+                them for others to enjoy.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 p-3 bg-white rounded">
+            <div
+              style="
+                flex-shrink: 0;
+                width: 2.5rem;
+                height: 2.5rem;
+                background-color: #047857;
+                color: white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+              "
+            >
+              5
+            </div>
+            <div>
+              <h4 class="mb-1">Minimize Campfire Impacts</h4>
+              <p class="text-sm m-0">
+                Use a camp stove for cooking. If fires are permitted, use
+                established fire rings and burn all wood to ash.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 p-3 bg-white rounded">
+            <div
+              style="
+                flex-shrink: 0;
+                width: 2.5rem;
+                height: 2.5rem;
+                background-color: #047857;
+                color: white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+              "
+            >
+              6
+            </div>
+            <div>
+              <h4 class="mb-1">Respect Wildlife</h4>
+              <p class="text-sm m-0">
+                Observe from a distance, never feed animals, and store food
+                securely.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 p-3 bg-white rounded">
+            <div
+              style="
+                flex-shrink: 0;
+                width: 2.5rem;
+                height: 2.5rem;
+                background-color: #047857;
+                color: white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+              "
+            >
+              7
+            </div>
+            <div>
+              <h4 class="mb-1">Be Considerate of Others</h4>
+              <p class="text-sm m-0">
+                Keep noise down, yield to others on trails, and take breaks away
+                from the trail.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Emergency Preparedness -->
+      <section
+        class="card"
+        style="background-color: #fee2e2; border-color: #fca5a5"
+      >
+        <div class="flex items-center gap-2 mb-4">
+          <span style="font-size: 2rem">📞</span>
+          <h2 class="m-0">Emergency Preparedness</h2>
+        </div>
+
+        <div class="mb-4">
+          <h3>Before You Go</h3>
+          <ul>
+            <li>Tell someone where you're going and when you'll be back</li>
+            <li>Check weather forecasts and trail conditions</li>
+            <li>Download offline maps (cell service is often unavailable)</li>
+            <li>
+              Fully charge your phone and consider bringing a backup battery
+            </li>
+          </ul>
+        </div>
+
+        <div class="mb-4">
+          <h3>If You Get Lost</h3>
+          <ul>
+            <li><strong>STOP:</strong> Stay calm, Think, Observe, Plan</li>
+            <li>
+              Stay where you are if possible - it's easier for rescuers to find
+              you
+            </li>
+            <li>
+              Make yourself visible with bright colors or reflective materials
+            </li>
+            <li>
+              Signal for help: three of anything (whistle blasts, fires, etc.)
+              is the universal distress signal
+            </li>
+          </ul>
+        </div>
+
+        <div class="card p-3 bg-white">
+          <h4>Emergency Contacts</h4>
+          <ul class="m-0">
+            <li><strong>Emergency Services:</strong> 911</li>
+            <li>
+              <strong>Non-Emergency Search & Rescue:</strong> Contact local
+              sheriff's office
+            </li>
+            <li>
+              <strong>USFS Pacific Northwest Region:</strong> (503) 808-2468
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="card text-center mt-4">
+        <span style="font-size: 3rem; display: block; margin-bottom: 1rem"
+          >👥</span
+        >
+        <h2>Want to Learn More?</h2>
+        <p class="mb-4">
+          Join one of our guided hikes to learn safety practices hands-on with
+          experienced wilderness guides.
+        </p>
+        <a href="community.html" class="btn btn-primary btn-lg">
+          View Guided Hikes
+        </a>
+      </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="grid grid-cols-3 gap-4">
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <span style="font-size: 1.5rem">🏔️</span>
+              <span class="font-bold text-lg" style="color: white"
+                >The Great Outdoors</span
+              >
+            </div>
+            <p class="text-sm mb-3">
+              Helping people explore the Pacific Northwest responsibly while
+              protecting natural resources.
+            </p>
+            <div class="text-sm">
+              <div class="mb-2">📍 Bend, Oregon</div>
+              <div>
+                ✉️
+                <a
+                  href="mailto:info@thegreatoutdoors.org"
+                  style="color: #d6d3d1"
+                  >info@thegreatoutdoors.org</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="trails.html">Browse Trails</a></li>
+              <li><a href="safety.html">Hiking Safety</a></li>
+              <li><a href="community.html">Join Community</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Our Mission</h3>
+            <p class="text-sm">
+              Founded by Evan Holt, a former wilderness guide with 15+ years of
+              experience, we're dedicated to promoting safe, responsible outdoor
+              recreation in the Pacific Northwest.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="currentYear"></span> The Great Outdoors. All rights
+            reserved.
+          </p>
+          <p class="mt-1">
+            Building a hiking community in the Pacific Northwest
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="../scripts/trails-data.js"></script>
+    <script src="../scripts/main.js"></script>
   </body>
 </html>
